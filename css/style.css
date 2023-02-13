@@ -10,15 +10,16 @@
 }
 
 body {
-  min-width: 480px;
-  min-height: 100vh;
+  /* min-width: 480px;
+  min-height: 100vh; */
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   color: #fff;
   text-align: center;
   background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
   background-blend-mode: multiply;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;  
 }
 
 .header {
@@ -282,5 +283,27 @@ body {
   .name {
     font-size: 32px;
     padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .greeting-container {    
+    font-size: 25px;
+  }
+
+  .name {
+    font-size: 25px;
+  }
+
+  .time {   
+    font-size: 65px;
+  }
+
+  .player-icon,
+  .slider-icon,
+  .change-quote {
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;      
   }
 }

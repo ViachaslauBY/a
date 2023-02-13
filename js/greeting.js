@@ -2,7 +2,7 @@ const getTimeOfDay = () => {
   const timeOfDay = ['Morning', 'Afternoon', 'Evening', 'Night'];
   const date = new Date();
   const hours = date.getHours();
-  return timeOfDay[Math.trunc(hours / 6) - 1];
+  return (timeOfDay[Math.trunc(hours / 6) - 1]) ? timeOfDay[Math.trunc(hours / 6) - 1] : 'Night';
 } 
 
 export const showGreeting = () => {
