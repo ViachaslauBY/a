@@ -1,5 +1,5 @@
-const getTimeOfDay = () => {
-  const timeOfDay = ['Morning', 'Afternoon', 'Evening', 'Night'];
+export const getTimeOfDay = () => {
+  const timeOfDay = ['morning', 'afternoon', 'evening', 'night'];
   const date = new Date();
   const hours = date.getHours();
   return (timeOfDay[Math.trunc(hours / 6) - 1]) ? timeOfDay[Math.trunc(hours / 6) - 1] : 'Night';
