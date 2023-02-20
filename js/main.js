@@ -1,54 +1,11 @@
-import {showDate} from './date.js';
-import {showGreeting} from './greeting.js';
+import {showTime} from './time.js';
 import {setBackground} from './slider.js';
-
-const timeBlock = document.querySelector('.time');
-
-const showTime = () => {
-  const date = new Date();
-  const currentTime = date.toLocaleTimeString();
-  timeBlock.textContent = currentTime;
-
-  showDate(); 
-  showGreeting();   
-  setTimeout(showTime, 1000);       
-}
+import {getWeather} from './weather.js';
+import {getQuotes} from './quote.js';
 
 showTime();
 setBackground();
+getWeather();
+getQuotes();
 
 
-
-const weatherIcon = document.querySelector('.weather-icon');
-const temperature = document.querySelector('.temperature');
-const weatherDescription = document.querySelector('.weather-description');
-const wind = document.querySelector('.wind');
-const humidity = document.querySelector('.humidity');
-const city = document.querySelector('.city');
-const error = document.querySelector('.weather-error');
-
-async function getWeather() {  
-  try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=en&appid=b20a318841b5fff0ce245845f295fbbb&units=metric`;
-    const res = await fetch(url);
-    const data = await res.json(); 
-    
-    weatherIcon.className = 'weather-icon owf';
-    weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-    temperature.textContent = `${Math.round(data.main.temp)}°C`;
-    weatherDescription.textContent = data.weather[0].description;
-    wind.textContent = `Wind speed: ${Math.round(data.wind.speed)}m/s`;
-    humidity.textContent = `Humidity: ${data.main.humidity}%`;
-  } catch(e) {
-    error.textContent = `Error! city not found for ${city.value}!`
-  }  
-}
-
-const setLocalStorage = () => localStorage.setItem('city', document.querySelector('.city').value); 
-window.addEventListener('beforeunload', setLocalStorage);
-
-const getLocalStorage = () => localStorage.getItem('city') ? document.querySelector('.city').value = localStorage.getItem('city') : false;
-window.addEventListener('load', getLocalStorage);
-
-getWeather()
-city.addEventListener('change', getWeather);
