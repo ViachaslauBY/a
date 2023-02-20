@@ -26,7 +26,7 @@ body {
   max-width: 1920px;
 }
 
-.header__wrapper {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;  
@@ -181,7 +181,7 @@ body {
 .slider-icon {
   position: absolute;
   top: 50%;
-  margin-top: -16px;
+  margin-top: -30px;
   cursor: pointer;
 }
 
@@ -308,6 +308,14 @@ body {
     font-size: 16px;
   }
 
+  .city {
+    width: 120px;      
+  }
+
+  .weather {      
+    width: 135px;      
+  }
+
   .player-icon,
   .slider-icon,
   .change-quote {
@@ -318,9 +326,14 @@ body {
   
   .player-controls {
     justify-content: start;
+    width: 145px;
   }
 
   .player-icon:not(:last-child) {
     margin-right: 10px;
+  }
+
+  .footer {   
+    height: 25vh;    
   }
 }
