@@ -15,7 +15,7 @@ export const setBackground = () => {
   } 
   
   const img = new Image();  
-  img.src = `https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${getTimeOfDay()}/${backgroundNum}.jpg`;  
+  img.src = `https://raw.githubusercontent.com/ViachaslauBY/images/main/images/${getTimeOfDay()}/${backgroundNum}.jpg`;  
   img.onload = () => {      
     document.body.style.backgroundImage = `url(${img.src})`;
   };      
