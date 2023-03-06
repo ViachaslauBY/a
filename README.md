@@ -1,1 +1,1 @@
-# stage1-tasks
+https://ViachaslauBY.github.io/rsschool-cv/
