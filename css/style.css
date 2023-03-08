@@ -481,6 +481,10 @@ body.lock {
   overflow: hidden;
 }
 
+.certificates__item:hover {
+  opacity: .7;
+}
+
 .certificates__subtitle {
   font-size: 18px;
   color: #356AD3;
@@ -495,11 +499,15 @@ body.lock {
 }
 
 #magnify {
-  display: none;  
+  /* display: none;   */
+  top: 50%;
+  left: 50%;
+  display: none;
   position: fixed;  
   max-width: 900px;
   height: auto;
   z-index: 9999;
+  transform: translate(-50%, -50%);
 }
 
 #magnify img { 
@@ -508,6 +516,7 @@ body.lock {
 
 /* затемняющий фон */
 #overlay {
+  /* display: none; */
   display: none;
   background: #000;
   position: fixed;
@@ -735,7 +744,8 @@ body.lock {
 }
 
 @media (max-width: 976px) {
-  .work-experience__list {       
+  .work-experience__list,
+  .certificates__list {       
     justify-content: center;
   }
 

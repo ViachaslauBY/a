@@ -17,7 +17,13 @@
   <title>Viachaslau Fedartsou CV</title>
 </head>
 <body>
-
+  <div id="overlay"></div>
+  <div id="magnify">
+    <img id="img" src="#" alt="Certificate">
+    <div id="close-popup">
+      <i></i>
+    </div>
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__container"> 
@@ -49,7 +55,10 @@
                 <a class="nav__link lang" href="#about" data-key="about">About me</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link lang" href="#education" data-key="education">Education & Courses</a>
+                <a class="nav__link lang" href="#education" data-key="education">Courses</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang" href="#certificates" data-key="certificates">Certificates</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link lang" href="#skills" data-key="skills">Skills</a>
@@ -57,9 +66,9 @@
               <li class="nav__item">
                 <a class="nav__link lang" href="#work-experience" data-key="work-experience">Work experience</a>
               </li>
-              <li class="nav__item">
+              <!-- <li class="nav__item">
                 <a class="nav__link lang" href="#code" data-key="code-example">Code example</a>
-              </li>
+              </li> -->
               <li class="nav__item">
                 <a class="nav__link lang" href="#languages" data-key="languages">Languages</a>
               </li>
@@ -131,18 +140,9 @@
     <section class="education" id="education">
       <div class="container">
         <div class="education__wrapper">
-          <h2 class="education__title lang" data-key="education">Education & Courses</h2>
+          <h2 class="education__title lang" data-key="education">Courses</h2>
         </div>
-        <ul class="education__list">
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date1">Sep 2003 - May 2004</span>
-            <div class="education__name">
-              <a class="education__link lang" href="http://ggpls.by/" target="_blank" data-key="pty">
-                Gomel State Professional Lyceum of Builders
-              </a>
-              <span class="education__profession lang" data-key="pty-profession">Finishing construction works</span>
-            </div>
-          </li>
+        <ul class="education__list">          
           <li class="education__item">
             <span class="education__date lang" data-key="education-date2">Jun 2019 - Sep 2019</span>
             <div class="education__name">
@@ -178,6 +178,13 @@
               <span class="education__profession lang" data-key="rs-profession">JavaScript/Front-end. Stage 0</span>
             </div>
           </li>
+          <li class="education__item">
+            <span class="education__date lang" data-key="education-date7">Mar 2023 - Sept 2023</span>
+            <div class="education__name">
+              <a class="education__link" href="https://rs.school/" target="_blank">RS School</a>
+              <span class="education__profession lang" data-key="rs-profession2">JavaScript/Front-end. Stage 1</span>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
@@ -190,7 +197,19 @@
         <ul class="certificates__list">
           <li class="certificates__item">            
             <h3 class="certificates__subtitle">The Rolling Scopes School</h3>              
-            <img class="certificates__img" src="img/rs-0.png" alt="">
+            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
+          </li>
+          <li class="certificates__item">
+            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
+            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
+          </li>
+          <li class="certificates__item">
+            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
+            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
+          </li>
+          <li class="certificates__item">
+            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
+            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
           </li>
         </ul>
       </div>
@@ -301,7 +320,7 @@
       </div>
     </section>
 
-    <section class="code" id="code">
+    <!-- <section class="code" id="code">
       <div class="container">
         <div class="code__wrapper">
           <h2 class="code__title lang" data-key="code-example">Code example</h2>
@@ -319,7 +338,7 @@
   </code>
 </pre>
       </div>
-    </section>
+    </section> -->
 
     <section class="languages" id="languages">
       <div class="container">
