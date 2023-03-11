@@ -1,1 +1,1 @@
-https://ViachaslauBY.github.io/rsschool-cv/
+https://ViachaslauBY.github.io/cssBayan/

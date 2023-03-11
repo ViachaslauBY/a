@@ -1,380 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" class="notranslate" translate="no">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="google" content="notranslate">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="icon" href="img/icon.png" type="img/png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css"> 
-  <script src="js/burger-menu.js" defer></script> 
-  <script src="js/smooth-scrolling.js" defer></script> 
-  <script src="js/toggle-theme.js" defer></script> 
-  <script src="js/change-language.js" defer></script>    
-  <script src="js/zoom-img.js" defer></script>    
-  <title>Viachaslau Fedartsou CV</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>cssBayan</title>
 </head>
 <body>
-  <div id="overlay"></div>
-  <div id="magnify">
-    <img id="img" src="#" alt="Certificate">
-    <div id="close-popup">
-      <i></i>
-    </div>
-  </div>
-  <header class="header">
-    <div class="container">
-      <div class="header__container"> 
-        <div class="header__butoons">   
-          <button class="header__icon-toggle button-reset" id="button-toggle" aria-label="Changing the color theme">
-            <span class="material-icons" id="icon-toggle"></span>
-          </button>
-          <div class="header__translation">
-            <button class="translation__buuton button-reset" id="en" type="button" aria-label="English language selection">
-              <img class="translation__img" src="img/gb.png" alt="Great Britain Flag">
-            </button>
-            <button class="translation__buuton button-reset" id="ru" type="button" aria-label="Russian Flag language selection">
-              <img class="translation__img" src="img/ru.png" alt="Russian Flag">
-            </button>
+  <div class="accordion">
+    <div class="accordion__info">
+      <h1 class="accordion__title">cssBayan</h1>
+      <img class="accordion__img" src="images/bayan.png" alt="">
+    </div>    
+    <ul class="accordion__list">
+      <li class="accordion__item"> 
+        <label class="accordion__label" for="item-1">
+          <input class="accordion__input" type="radio" id="item-1" name="item" checked>
+          <div class="accordion__header">
+            <h3 class="header__title">You can't just copy and past CSS</h3>
+            <span class="header__icon"></span>
           </div>
-        </div>        
-        <div class="header__nav">
-          <button class="header__burger button-reset" type="button" aria-label="Burger menu">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link lang" href="#contacts" data-key="contacts">Contacts</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link lang" href="#about" data-key="about">About me</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link lang" href="#education" data-key="education">Courses</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link lang" href="#certificates" data-key="certificates">Certificates</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link lang" href="#skills" data-key="skills">Skills</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link lang" href="#work-experience" data-key="work-experience">Work experience</a>
-              </li>
-              <!-- <li class="nav__item">
-                <a class="nav__link lang" href="#code" data-key="code-example">Code example</a>
-              </li> -->
-              <li class="nav__item">
-                <a class="nav__link lang" href="#languages" data-key="languages">Languages</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="header__inner">
-        <img class="header__img" src="img/my-photo.jpg" alt="Viachaslau Fedartsou">
-        <div class="header__info">
-          <h1 class="header__title lang" data-key="name">Fedartsou Viachaslau</h1>
-          <h2 class="header__subtitle lang" data-key="profession">Front-End Developer</h2>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="contacts" id="contacts">
-      <div class="container">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title lang" data-key="contacts">Contacts</h2>
-        </div>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+375259724902" target="_blank">
-              <img class="contacts__icon" src="img/phone.png" alt="Phone">
-              <span class="contacts__text">+375-25-972-49-02</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:viachaslaufedartsou@gmail.com" target="_blank">
-              <img class="contacts__icon" src="img/gmail.png" alt="Gmail">
-              <span class="contacts__text">viachaslaufedartsou@gmail.com</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="skype:live:.cid.3376d2a70848d43c" target="_blank">
-              <img class="contacts__icon" src="img/skype.png" alt="Skype">
-              <span class="contacts__text">Viachaslau Fedartsou</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="https://github.com/ViachaslauBY" target="_blank">
-              <img class="contacts__icon" src="img/github.png" alt="Github">
-              <span class="contacts__text">ViachaslauBY</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="https://www.linkedin.com/in/viachaslau-fedartsou/" target="_blank">
-              <img class="contacts__icon" src="img/linkedin.png" alt="Linkedin">
-              <span class="contacts__text">Viachaslau Fedartsou</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about__wrapper">
-          <h2 class="about__title lang" data-key="about">About me</h2>
-        </div>
-        <p class="about__text lang" data-key="about-text">My main goal is to get a job as a Frontend developer and become a highly qualified specialist in this field. My key skills are teamwork and quick learning. I am constantly learning new programming skills and developing my English language skills. I hope to become part of a dynamic team.
-        </p>
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <div class="container">
-        <div class="education__wrapper">
-          <h2 class="education__title lang" data-key="education">Courses</h2>
-        </div>
-        <ul class="education__list">          
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date2">Jun 2019 - Sep 2019</span>
-            <div class="education__name">
-              <a class="education__link lang" href="https://www.gomel.it-academy.by/" target="_blank" data-key="it-academy">IT-Academy</a>
-              <span class="education__profession lang" data-key="academy-profession1">Website development with HTML, CSS & JavaScript</span>
-            </div>
-          </li>
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date3">May 2020 - Aug 2020</span>
-            <div class="education__name">
-              <a class="education__link lang" href="https://www.gomel.it-academy.by/" target="_blank" data-key="it-academy">IT-Academy</a>
-              <span class="education__profession lang" data-key="academy-profession2">Web application development with JavaScript</span>
-            </div>
-          </li>
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date4">Sep 2020 - Aug 2021</span>
-            <div class="education__name">
-              <a class="education__link" href="https://skillbox.ru/" target="_blank">SKILLBOX</a>
-              <span class="education__profession lang" data-key="skillbox-profession">Web developer</span>
-            </div>
-          </li>
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date5">Oct 2021 - Feb 2022</span>
-            <div class="education__name">
-              <a class="education__link" href="https://training.epam.com/" target="_blank">EPAM Training</a>
-              <span class="education__profession lang" data-key="epam-profession">Front-End Development</span>
-            </div>
-          </li>
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date6">Dec 2022 - Feb 2023</span>
-            <div class="education__name">
-              <a class="education__link" href="https://rs.school/" target="_blank">RS School</a>
-              <span class="education__profession lang" data-key="rs-profession">JavaScript/Front-end. Stage 0</span>
-            </div>
-          </li>
-          <li class="education__item">
-            <span class="education__date lang" data-key="education-date7">Mar 2023 - Sept 2023</span>
-            <div class="education__name">
-              <a class="education__link" href="https://rs.school/" target="_blank">RS School</a>
-              <span class="education__profession lang" data-key="rs-profession2">JavaScript/Front-end. Stage 1</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="certificates" id="certificates">
-      <div class="container">
-        <div class="certificates__wrapper">
-          <h2 class="certificates__title lang" data-key="education">Certificates</h2>
-        </div>
-        <ul class="certificates__list">
-          <li class="certificates__item">            
-            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>              
-            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
-          </li>
-          <li class="certificates__item">
-            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
-            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
-          </li>
-          <li class="certificates__item">
-            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
-            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
-          </li>
-          <li class="certificates__item">
-            <h3 class="certificates__subtitle">The Rolling Scopes School</h3>
-            <img class="certificates__img" src="img/rs-0.png" alt="Certificate">
-          </li>
-        </ul>
-      </div>
-    </section>  
-      
-    <section class="skills" id="skills">
-      <div class="container">
-        <div class="skills__wrapper">
-          <h2 class="skills__title lang" data-key="skills">Skills</h2>
-        </div>
-        <ul class="skills__list">
-          <li class="skills__item">
-            <span class="skills__text">HTML5</span>
-            <img class="skills__icon" src="img/html.png" alt="HTML">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">CSS3</span>
-            <img class="skills__icon" src="img/css.png" alt="CSS">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">SASS</span>
-            <img class="skills__icon" src="img/sass.png" alt="SASS">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">Bootstrap</span>
-            <img class="skills__icon" src="img/bootstrap.png" alt="Bootstrap">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">JS</span>
-            <img class="skills__icon" src="img/js.png" alt="JavaScript">
-          </li>          
-          <li class="skills__item">
-            <span class="skills__text">Git</span>
-            <img class="skills__icon" src="img/git.png" alt="Git">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">Figma</span>
-            <img class="skills__icon" src="img/figma.png" alt="Figma">
-          </li>
-          <li class="skills__item">
-            <span class="skills__text">Photoshop</span>
-            <img class="skills__icon" src="img/photoshop.png" alt="Photoshop">
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="work-experience" id="work-experience">
-      <div class="container">
-        <div class="work-experience__wrapper">
-          <h2 class="work-experience__title lang" data-key="work-experience">Work experience</h2>
-        </div>
-        <ul class="work-experience__list">
-          <li class="work-experience__item">
-            <div class="work-experience__info">
-              <h3 class="work-experience__subtitle">CV</h3>
-              <div class="work-experience__languages">
-                <img class="work-experience__icon" src="img/html.png" alt="HTML">
-                <img class="work-experience__icon" src="img/css.png" alt="CSS">
-                <img class="work-experience__icon" src="img/js.png" alt="JS">
-              </div>
-            </div>
-            <a class="work-experience__link" href="https://viachaslauby.github.io/rsschool-cv/">
-              <img class="work-experience__img" src="img/pattern-cv.png" alt="CV">
-            </a>
-          </li>
-          <li class="work-experience__item">
-            <div class="work-experience__info">
-              <h3 class="work-experience__subtitle">Skillbox</h3>
-              <div class="work-experience__languages">
-                <img class="work-experience__icon" src="img/html.png" alt="HTML">
-                <img class="work-experience__icon" src="img/css.png" alt="CSS">
-                <img class="work-experience__icon" src="img/bootstrap.png" alt="Bootstrap">
-                <img class="work-experience__icon" src="img/js.png" alt="JS">
-              </div>
-            </div>
-            <a class="work-experience__link" href="https://viachaslauby.github.io/Skillbox/">
-              <img class="work-experience__img" src="img/pattern-skillbox.png" alt="Skillbox">
-            </a>
-          </li>
-          <li class="work-experience__item">
-            <div class="work-experience__info">
-              <h3 class="work-experience__subtitle">Evklid</h3>
-              <div class="work-experience__languages">
-                <img class="work-experience__icon" src="img/html.png" alt="HTML">
-                <img class="work-experience__icon" src="img/css.png" alt="CSS">
-                <img class="work-experience__icon" src="img/js.png" alt="JS">
-              </div>
-            </div>
-            <a class="work-experience__link" href="https://viachaslauby.github.io/Evklid/">
-              <img class="work-experience__img" src="img/pattern-evklid.png" alt="Evklid">
-            </a>
-          </li>
-          <li class="work-experience__item">
-            <div class="work-experience__info">
-              <h3 class="work-experience__subtitle">Calculator</h3>
-              <div class="work-experience__languages">
-                <img class="work-experience__icon" src="img/html.png" alt="HTML">
-                <img class="work-experience__icon" src="img/css.png" alt="CSS">
-                <img class="work-experience__icon" src="img/js.png" alt="JS">
-              </div>
-            </div>
-            <a class="work-experience__link" href="https://viachaslauby.github.io/Calculator/">
-              <img class="work-experience__img" src="img/pattern-calculator.png" alt="Calculator">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- <section class="code" id="code">
-      <div class="container">
-        <div class="code__wrapper">
-          <h2 class="code__title lang" data-key="code-example">Code example</h2>
-        </div>
-<pre class="code__content">
-  <code class="code__text">
-    function getSum(a) {
-      return function(b) {
-        return a + b;
-      }
-    }
-    
-    const sum = getSum(10);
-    sum(1);
-  </code>
-</pre>
-      </div>
-    </section> -->
-
-    <section class="languages" id="languages">
-      <div class="container">
-        <div class="languages__wrapper">
-          <h2 class="languages__title lang" data-key="languages">Languages</h2>
-        </div>
-        <ul class="languages__list">
-          <li class="languages__item">
-            <img class="languages__img" src="img/gb.png" alt="Great Britain Flag">
-            <span class="languages__text lang" data-key="en">English (Pre-Intermediate)</span>
-          </li>
-          <li class="languages__item">
-            <img class="languages__img" src="img/ru.png" alt="Russian Flag">
-            <span class="languages__text lang" data-key="ru">Russian (Fluent)</span>
-          </li>
-          <li class="languages__item">
-            <img class="languages__img" src="img/by.png" alt="Belarusian Flag">
-            <span class="languages__text lang" data-key="by">Belarusian (Native)</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <a class="footer__link" href="https://github.com/ViachaslauBY" target="_blank">
-          <img class="footer__img github" src="img/github.svg" alt="Github">
-        </a>
-        <span class="footer__text">2022</span>
-        <a class="footer__link" href="https://rs.school/js/" target="_blank">
-          <img class="footer__img rs" src="img/rsschool.svg" alt="RSSchool">
-        </a>
-      </div>
-    </div>
-  </footer>  
+          <div class="accordion__body">
+            <img class="body__img" src="images/meme1.png" alt="Meme">
+          </div>
+        </label>                                                                          
+      </li>  
+      <li class="accordion__item">
+        <label class="accordion__label" for="item-2">
+          <input class="accordion__input" type="radio" id="item-2" name="item">
+          <div class="accordion__header">
+            <h3 class="header__title">Keep calm and carry on</h3>
+            <span class="header__icon"></span>
+          </div>
+          <div class="accordion__body">
+            <img class="body__img" src="images/meme2.png" alt="Meme">
+          </div>
+        </label>
+      </li>
+      <li class="accordion__item">
+        <label class="accordion__label" for="item-3">
+          <input class="accordion__input" type="radio" id="item-3" name="item">
+          <div class="accordion__header">
+            <h3 class="header__title">Work-life balance</h3>
+            <span class="header__icon"></span>
+          </div>
+          <div class="accordion__body">
+            <img class="body__img" src="images/meme3.png" alt="Meme">
+          </div>
+        </label>
+      </li>
+      <li class="accordion__item">
+        <label class="accordion__label" for="item-4">
+          <input class="accordion__input" type="radio" id="item-4" name="item">
+          <div class="accordion__header">
+            <h3 class="header__title">Dude, where is JS?</h3>
+            <span class="header__icon"></span>
+          </div>
+          <div class="accordion__body">
+            <img class="body__img" src="images/meme4.png" alt="Meme">
+          </div>
+        </label>
+      </li>
+      <li class="accordion__item">
+        <label class="accordion__label" for="item-5">
+          <input class="accordion__input" type="radio" id="item-5" name="item">
+          <div class="accordion__header">
+            <h3 class="header__title">Relax and take it easy</h3>
+            <span class="header__icon"></span>
+          </div>
+          <div class="accordion__body">
+            <img class="body__img" src="images/meme5.png" alt="Meme">
+          </div>
+        </label>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
+
+
+
+
+
+
+<!-- <li class="accordion__item">
+  <div class="accordion__header">
+    <input class="header__input" type="radio" id="item-2" name="item">
+    <label class="header__title" for="item-2">Keep calm and carry on</label>
+    <span class="header__icon"></span>
+  </div>
+  <div class="accordion__body">
+    <img class="body__img" src="images/meme2.png" alt="Meme">
+  </div>
+</li>
+<li class="accordion__item">
+  <div class="accordion__header">
+    <input class="header__input" type="radio" id="item-3" name="item">
+    <label class="header__title" for="item-3">Work-life balance</label>
+    <span class="header__icon"></span>
+  </div>
+  <div class="accordion__body">
+    <img class="body__img" src="images/meme3.png" alt="Meme">
+  </div>
+</li>
+<li class="accordion__item">
+  <div class="accordion__header">
+    <input class="header__input" type="radio" id="item-4" name="item">
+    <label class="header__title" for="item-4">Dude, where is JS?</label>
+    <span class="header__icon"></span>
+  </div>
+  <div class="accordion__body">
+    <img class="body__img" src="images/meme4.png" alt="Meme">
+  </div>
+</li>
+<li class="accordion__item">
+  <div class="accordion__header">
+    <input class="header__input" type="radio" id="item-5" name="item">
+    <label class="header__title" for="item-5">Relax and take it easy</label>
+    <span class="header__icon"></span>
+  </div>
+  <div class="accordion__body">
+    <img class="body__img" src="images/meme5.png" alt="Meme">
+  </div>
+</li> -->

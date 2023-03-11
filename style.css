@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "comical";
+  src: url("fonts/comical.woff2") format('woff2'),
+    url("fonts/comical.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: "comical";
+  background-color: #fdefab;  
+}
+
+.accordion {
+  margin: 0 auto;  
+  padding: 1rem; 
+  max-width: 25rem;   
+}
+
+.accordion__info {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.accordion__title {
+  margin-right: 1rem;  
+  color: #ff6900;
+}
+
+.accordion__img {  
+  width: 3.5rem;
+}
+
+.accordion__list { 
+  color: #0059d9;
+  list-style: none;
+}
+
+.accordion__item {  
+  border-top: .1rem solid #b9b6b6;  
+}
+
+.accordion__label {
+
+}
+
+.accordion__input {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  transition: all .3 linear;
+}
+
+.header__title {   
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;   
+}
+
+.header__icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("images/icon.svg");
+  filter: brightness(0) saturate(100%) invert(20%) sepia(73%) saturate(3300%) hue-rotate(210deg) brightness(96%) contrast(101%);
+  transition: transform 0.4s linear;
+}
+
+.accordion__body {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.4s linear;
+}
+
+.body__img {   
+  height: 15rem;    
+  text-align: center;
+}
+
+.accordion__input:checked ~ .accordion__body {
+  height: 16rem;
+}
+
+.accordion__input:checked~.accordion__header .header__title {
+  color: #000;
+}
+
+.accordion__input:checked ~ .accordion__header .header__icon {
+  transform: rotate(-45deg);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(347deg) brightness(89%) contrast(111%);
+}
+
+@media (min-width: 576px) {
+  .accordion {    
+    max-width: 32rem;
+  }
+
+  .accordion__title {   
+    font-size: 3.2rem;
+  }
+
+  .accordion__img {
+    width: 5.5rem;
+  }
+
+  .header__title {
+    font-size: 1.6rem;
+  }
+
+  .header__icon {    
+    width: 2.5rem;
+    height: 2.5rem;    
+  }
+
+  .body__img {
+    height: 18rem;    
+  }
+
+  .accordion__input:checked ~ .accordion__body {
+    height: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    max-width: 55rem;
+  }
+
+  .accordion__title {   
+    font-size: 4rem;
+  }
+
+  .accordion__img {
+    width: 6.5rem;
+  }
+
+  .header__title {
+    padding: 1.5rem 0;
+    font-size: 2.2rem;
+  }
+
+  .header__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .body__img {
+    height: 30rem;
+  }
+
+  .accordion__input:checked~.accordion__body {
+    height: 31rem;
+  }    
+}
+
+@media (min-width: 1280px) {
+  .accordion {
+    max-width: 80rem;
+    padding: 1.7rem;
+  }
+
+  .accordion__info {
+    margin-bottom: 2rem;   
+  }
+
+  .accordion__title {        
+    font-size: 5rem;
+  }
+
+  .accordion__img {
+    width: 8.5rem;
+  }
+
+  .accordion__item:hover .accordion__body{
+    height: 31rem;
+  }
+
+  .accordion__item:hover .header__icon {
+    transform: rotate(-45deg);
+  }
+
+  .accordion__label {
+    cursor: pointer;
+  }
+
+  .accordion__list:hover {
+    color: #000;
+  }  
+
+  .header__title {
+    padding: 2.0rem 0;  
+    font-size: 2.7rem;  
+  }
+
+  .header__icon {
+    opacity: 0;
+  }
+
+  .accordion__list:hover .header__icon {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%) hue-rotate(347deg) brightness(89%) contrast(111%);
+  }
+}
